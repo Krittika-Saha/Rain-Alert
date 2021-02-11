@@ -20,7 +20,7 @@ for j in range(0, 12):
     for k in first_12_hours[j]['weather']:
         id.append(int(k['id']))
 for i in id:
-    if i < 900:
+    if i < 700:
         client = Client(account_sid, auth_token)
         message = client.messages.create(
             body="It's probably gonna rain, so bring an ☔",
